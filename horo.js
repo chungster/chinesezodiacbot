@@ -3,7 +3,7 @@ module.exports = function (robot){
 	robot.hear(/year(.*)/i, function(msg){
 		var year = parseInt(msg.match[1]);
 		var animal = getAnimal(year);
-			return msg.send(":" + animal +":")
+			return msg.send("You are a "+ ":" + animal +":")
 
 	});
 };
